@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update_Aktivity"
+    android:orientation="vertical"
+    android:background="#E4E4E4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Notebook"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:text="perbaharui catatan"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btnupdate"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cornerdata"
+            android:src="@drawable/ic_save_black_24dp"
+            android:padding="20dp"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etjudulupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="8dp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="masukkan judul..."
+        android:textColorHint="#B1B1B1"
+        android:background="@drawable/cornertext"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <EditText
+        android:id="@+id/etsubjudulupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="8dp"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="masukkan sub judul..."
+        android:textColorHint="#B1B1B1"
+        android:background="@drawable/cornertext"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <EditText
+        android:id="@+id/etisiupdate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#B1B1B1"
+        android:hint="silahkan tulis disini...."
+        android:gravity="start"
+        android:background="@drawable/cornertext"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>

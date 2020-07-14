@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tambah_Aktivity"
+    android:orientation="vertical"
+    android:background="#E4E4E4">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Notebook"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="tambahkan catatan"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btntambah"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cornerdata"
+            android:src="@drawable/ic_save_black_24dp"
+            android:padding="20dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="judul :"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#5E5E5E"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/etjudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="8dp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="masukkan judul..."
+        android:textColorHint="#B1B1B1"
+        android:background="@drawable/cornertext"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sub judul :"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#5E5E5E"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/etsubjudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/cornertext"
+        android:ems="10"
+        android:hint="masukkan sub judul..."
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="#B1B1B1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status_catatan"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#5E5E5E"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+    <RadioGroup
+        android:id="@+id/status_catatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp">
+        <RadioButton
+            android:id="@+id/rb_penting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Radio_button_1"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            />
+        <RadioButton
+            android:id="@+id/rb_tdk_penting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Radio_button_2"
+            android:textSize="18sp"
+            android:textColor="@color/text_color" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jenis_catatan"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#5E5E5E"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp">
+        <CheckBox
+            android:id="@+id/ckcatatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="catatan"
+            android:textSize="18sp"
+            android:textColor="#5E5E5E"
+            />
+        <CheckBox
+            android:id="@+id/ckkeuangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="keuangan"
+            android:textSize="18sp"
+            android:textColor="#5E5E5E" />
+        <CheckBox
+            android:id="@+id/ckpendidikan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pendidikan"
+            android:textSize="18sp"
+            android:textColor="#5E5E5E"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/catatan"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:textColor="#5E5E5E"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+    <EditText
+        android:id="@+id/etisi"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="start"
+        android:padding="10dp"
+        android:textAlignment="viewStart"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#B1B1B1"
+        android:hint="silahkan tulis disini...."
+        android:background="@drawable/cornertext"
+        android:textColor="@color/colorPrimaryDark"
+        android:scrollbars="vertical"/>
+</LinearLayout>
+
+
+</ScrollView>

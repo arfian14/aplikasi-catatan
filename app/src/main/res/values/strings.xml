@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">sqlite_data</string>
+    <string name="tambah_data">tambah data</string>
+    <string name="tambah">tambah</string>
+    <string name="Radio_button_1">penting</string>
+    <string name="Radio_button_2">tidak penting</string>
+    <string name="status_catatan">status catatan :</string>
+    <string name="jenis_catatan">jenis catatan :</string>
+    <string name="catatan">catatan :</string>
+</resources>
